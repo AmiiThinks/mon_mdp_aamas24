@@ -1,0 +1,3 @@
+training_steps: 10000
+testing_episodes: 100
+testing_frequency: 10

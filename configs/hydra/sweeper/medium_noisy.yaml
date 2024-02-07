@@ -1,0 +1,12 @@
+# @package _global_
+# @package hydra.sweeper
+_target_: hydra._internal.core_plugins.basic_sweeper.BasicSweeper
+max_batch_size: null
+params:
+  environment: medium_noisy
+  experiment: long
+  experiment.hide_progress_bar: True
+  experiment.datadir: data
+  experiment.rng_seed: range(0, 100)
+  monitor: binary_stateless, switch, n, limited_time, limited_use, limited_use_bonus, level
+  agent.critic.strategy: reward_is_0., ignore, reward_model, oracle, q_joint, q_sequential, oracle_with_reward_model

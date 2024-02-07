@@ -1,0 +1,13 @@
+# @package _global_
+# @package hydra.sweeper
+_target_: hydra._internal.core_plugins.basic_sweeper.BasicSweeper
+max_batch_size: null
+params:
+  wandb.mode: offline
+  environment: easy
+  experiment: short
+  experiment.hide_progress_bar: True
+  experiment.datadir: data
+  experiment.rng_seed: range(0, 3)
+  monitor: binary_stateless, switch
+  agent.critic.strategy: reward_model, oracle_with_reward_model

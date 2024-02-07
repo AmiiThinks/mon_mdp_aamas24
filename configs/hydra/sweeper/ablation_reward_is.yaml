@@ -1,0 +1,12 @@
+# @package _global_
+# @package hydra.sweeper
+_target_: hydra._internal.core_plugins.basic_sweeper.BasicSweeper
+max_batch_size: null
+params:
+  environment: easy, medium
+  experiment: short
+  experiment.hide_progress_bar: True
+  experiment.datadir: data
+  experiment.rng_seed: range(0, 100)
+  monitor: binary_stateless, switch
+  agent.critic.strategy: reward_is_-10., reward_is_1.

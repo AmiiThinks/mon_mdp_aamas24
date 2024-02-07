@@ -1,0 +1,16 @@
+*.tar.gz
+*.pyc
+*.pth
+*.tar
+*.pickle
+*.egg-info/
+outputs/
+wandb/
+out/*
+data*/
+debug*/
+multirun/
+build/
+.idea
+*.npy
+multirun.yaml
