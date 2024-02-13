@@ -1,4 +1,4 @@
-Source code of the paper [Monitored Markov Decision Processes](xxx).
+Source code of the paper [Monitored Markov Decision Processes](https://arxiv.org/abs/2402.06819).
 
 ## Install
 
